@@ -9,7 +9,7 @@ import java.util.Random;
 @Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
 
-    private final Random random = new Random();
+    private static final Random random = new Random();
 
     @Override
     public Integer printAbout(Customer c) {

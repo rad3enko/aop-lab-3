@@ -28,7 +28,8 @@ public class CustomerServiceAspect {
         System.out.println("BEFORE advice execute start");
         Customer customer = ((Customer) (joinPoint.getArgs()[0]));
         String serviceName = joinPoint.getSignature().getDeclaringTypeName();
-        System.out.println("This advice sees that Customer with id = " + customer.getId() + " is provided to service " + serviceName);
+        System.out.println("This advice sees that Customer with id = " +
+                           customer.getId() + " is provided to service " + serviceName);
         System.out.println("BEFORE advice execute end");
     }
 
